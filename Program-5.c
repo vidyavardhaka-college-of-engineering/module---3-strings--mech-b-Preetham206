@@ -13,19 +13,19 @@ int main()
   int c, count = 0;
   char s[1000];
 
-  printf("Enter a string: ");
+  printf("Enter a string ");
   scanf("%s", s);
 
-  for(c=0;c<500;c++)
+for(c=0;c<500;c++)
+{
+
+   if(s[c]=='a'||s[c]=='A'||s[c]=='e'||s[c]=='E'||s[c]=='i'||s[c]=='I'||s[c]=='o'||s[c]=='O'||s[c]=='u'||s[c]=='U') 
   {
+  count++;
 
-     if(s[c]=='a'||s[c]=='A'||s[c]=='e'||s[c]=='E'||s[c]=='i'||s[c]=='I'||s[c]=='o'||s[c]=='O'||s[c]=='u'||s[c]=='U') 
-   {
-   count++;
-
-   }
   }
-  printf("Number of vowels in the string = %d", count);
+}
+ printf("Number of vowels in the string = %d", count);
 
   return 0;
 }
